@@ -5,5 +5,5 @@
   --font-color-gray: #828282;
   --font-color-main: black;
 
-  --font-size-main: 18px;
+  --font-size-main: clamp(0.875rem, 0.717rem + 0.67vw, 1.125rem);
 }

@@ -1,13 +1,12 @@
 body {
-  background-color: #373737;
+  background-color: var(--bg-main);
 }
-.main {
-}
+
 .home {
   text-align: center;
+  padding: 0 0 70px 0;
 }
-.container {
-}
+
 .home-title {
   font-size: clamp(2rem, 1.488rem + 2.18vw, 2.813rem);
   font-weight: 700;
@@ -16,7 +15,7 @@ body {
 }
 .home-description {
   margin: 0 0 35px 0;
-  font-size: clamp(0.875rem, 0.717rem + 0.67vw, 1.125rem);
+  font-size: var(--font-size-main);
   font-weight: 500;
 }
 .home-image {
@@ -32,8 +31,5 @@ body {
 
   .home-title {
     width: min-content;
-  }
-
-  .home-description {
   }
 }
