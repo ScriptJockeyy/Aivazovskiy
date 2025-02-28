@@ -26,7 +26,7 @@
   font-size: var(--font-size-main);
   font-weight: 400;
   position: relative;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .nav-link::after {
@@ -36,20 +36,20 @@
   right: 0;
   bottom: -10px;
   height: 1px;
-  right: 100%; 
+  right: 100%;
   background-color: var(--font-color-main);
   transition: right 0.3s ease;
 }
 
 .nav-link:hover::after {
   right: 0;
-} 
+}
 
 .nav-link:hover {
   color: var(--font-color-main);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   .header {
     display: none;
   }
