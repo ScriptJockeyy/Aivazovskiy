@@ -1,0 +1,35 @@
+.history-section {
+    padding: 65px 0 70px 0;
+
+    color: var(--font-color-main);
+}
+
+.history-title {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.history-image {
+    width: 100%;
+    object-fit: cover;
+    height: 655px;
+    margin: 75px 0 0 0;
+}
+
+.history-description {
+ margin: 30px 0 0 0;
+ font-weight: 500;
+ font-size: var(--font-size-main );
+}
+
+@media (max-width: 500px) {
+    .history-image {
+        height: 479px;
+    }
+
+
+    .history-section {
+        padding: 50px 0 70px 0;
+    }
+}
+
