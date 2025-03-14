@@ -1,45 +1,53 @@
 .contacts {
-    padding: 55px 0 63px 0;
-    text-align: center;
+  padding: 55px 0 63px 0;
+  text-align: center;
 }
 
 .contacts-title {
-    font-size: 34px;
-    font-weight: 700;
-    color: var(--font-color-main);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--font-color-main);
 }
 
 .contacts-button {
-    width: 210px;
-    height: 42px;
-    background-color: var(--font-color-main);
-    border-radius: 21px;
-    color: var(--bg-main-gray);
-    font-size: 24px;
-    border: none;
-    font-weight: 500;
-    margin: 75px 0 30px 0;
+  width: 210px;
+  height: 42px;
+  background-color: var(--font-color-main);
+  border-radius: 21px;
+  color: var(--bg-main-gray);
+  font-size: 24px;
+  border: none;
+  font-weight: 500;
+  margin: 75px 0 30px 0;
 }
 
 .contacts-button:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 0 30px 0;
 }
 
 .social-icon {
-    width: 65px;
-    height: 65px;
-    fill: currentColor;
-    color: var(--font-color-main);
+  box-sizing: border-box;
+  width: 65px;
+  height: 65px;
+  fill: currentColor;
+  color: var(--font-color-main);
 }
 
-.social-icon:hover {
-    fill: lightcoral;
+svg {
+  fill: var(--font-color-main);
+  transition: fill 0.3s ease;
+  width: 55px;
+  height: 55px;
+}
+
+.icon:hover {
+  fill: lightcoral;
 }
