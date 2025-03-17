@@ -10,8 +10,9 @@
 }
 
 .contacts-button {
+  position: relative; /* Устанавливаем позиционирование для родительского элемента */
   width: 210px;
-  height: 42px;
+  height: 45px;
   background-color: var(--font-color-main);
   border-radius: 21px;
   color: var(--bg-main-gray);
@@ -19,6 +20,19 @@
   border: none;
   font-weight: 500;
   margin: 75px 0 30px 0;
+}
+
+.contacts-button a {
+  position: absolute; /* Абсолютное позиционирование для ссылки */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit; /* Наследуем цвет от родителя */
+  text-decoration: none; /* Убираем подчеркивание */
 }
 
 .contacts-button:hover {
@@ -29,14 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: clamp(1.25rem, 0.875rem + 1.6vw, 1.875rem);
   margin: 0 0 30px 0;
 }
 
 .social-icon {
   box-sizing: border-box;
-  width: 65px;
-  height: 65px;
   fill: currentColor;
   color: var(--font-color-main);
 }
@@ -44,10 +56,17 @@
 svg {
   fill: var(--font-color-main);
   transition: fill 0.3s ease;
-  width: 55px;
-  height: 55px;
+  width: clamp(3.125rem, 2.563rem + 2.4vw, 4.063rem);
+  height: auto; /* Сохраняет пропорции */
 }
 
 .icon:hover {
   fill: lightcoral;
+}
+
+.contacts-info {
+  width: 250px;
+  text-align: center;
+  margin: 35px auto 0;
+  font-size: clamp(0.875rem, 0.8077rem + 0.3077vw, 1rem);
 }
